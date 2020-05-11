@@ -1,0 +1,171 @@
+/***** BASE STYLES *****/
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #757575;
+}
+
+#work {
+	height: 800px;
+}
+
+#about {
+	height: 600px;
+}
+
+#contact {
+	height: 400px;
+}
+
+
+/***** GRID *****/
+.full-width {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.half-width {
+	float: left;
+	width: 600px;
+}
+
+.third-width {
+	float: left;
+	width: 400px;
+}
+
+/***** HEADER STYLES *****/
+
+nav {
+	float: right;
+	padding: 30px 200px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: #c78056;
+	font-family: 'Alice', serif;
+	font-size: 20px;
+	padding-left: 80px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header {
+    background: url('../img/hero-image.png');
+    background-size: cover;
+    height: 800px;
+}
+
+header h1 {
+	color: #c78056;
+	font-family: 'Alice', serif;
+	font-size: 50px;
+	margin: 0;
+	padding: 300px 0 0 0;
+	text-align: center;
+}
+
+header span {
+	color: #c78056;
+	font-family: 'Sacramento', cursive;
+	font-size: 80px;
+}
+
+header h2 {
+	color: #095256;
+	font-family: 'Alice', serif;
+	font-size: 30px;
+	padding: 0px 320px;
+	text-align: center;
+}
+
+
+/***** WORK STYLES *****/
+
+#work {
+	text-align: center;
+}
+
+#work .half-width {
+	height: 350px;
+}
+
+#work h2 {
+	font-family: 'Alice', serif;
+	font-size: 50px;
+	color: #c78056;
+}
+
+
+#work img {
+	border: 1px solid #ddd;
+	margin-left: 100px;
+	padding: 5px;
+	width: 400px;
+}
+
+#work p {
+	color: #757575;
+	font-weight: 400;
+	font-size: 20px;
+	margin-right: 100px;
+	text-align: left;
+}
+
+
+/***** ABOUT STYLES *****/
+#about {
+	background: #f9ceb7;
+}
+
+#about .full-width {
+	clear: both;
+}
+
+#about h2 {
+	color: #c78056;
+	font-family: 'Alice', serif;
+	font-size: 50px;
+	padding: 50px 0 0 0;
+	text-align: center;
+}
+
+#about img {
+	border: 12px solid #ffffff;
+	margin: 0 100px;
+	width: 450px;
+}
+
+#about p {
+	color: #757575;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0 50px;
+	text-align: left;
+}
+
+
+
+/***** CONTACT STYLES *****/
+
+#contact {
+	background: url('../img/contact-image.jpg');
+	background-size: cover;
+}
+
+#contact h3 {
+	color: #c78056;
+	font-family: 'Alice', serif;
+	font-size: 50px;
+	margin: 0;
+	padding: 50px 0 0 0;
+	text-align: left;
+}
+
+#contact img {
+	margin: 50px 0 0 100px;
+	width: 70px;
+}
