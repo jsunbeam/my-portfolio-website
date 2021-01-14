@@ -1,54 +1,76 @@
 /***** BASE STYLES *****/
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	color: #757575;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	font-size: 1em;
 }
 
-#work {
-	height: 800px;
-}
-
-#about {
-	height: 600px;
-}
-
-#contact {
-	height: 400px;
-}
 
 
 /***** GRID *****/
 .full-width {
-    margin: 0 auto;
-    width: 1200px;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-direction: column;
 }
 
 .half-width {
-	float: left;
-	width: 600px;
+	width: 90%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-direction: column;
 }
 
 .third-width {
-	float: left;
-	width: 400px;
+	width: 33%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: column;
 }
 
 /***** HEADER STYLES *****/
 
+
 nav {
-	float: right;
-	padding: 30px 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: 20px 0;
+	width: 50%;
 }
 
-nav ul li {
-	display: inline-block;
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
 }
+
 
 nav ul li a {
 	color: #c78056;
 	font-family: 'Alice', serif;
-	font-size: 20px;
-	padding-left: 80px;
+	font-size: 2em;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -56,63 +78,67 @@ nav ul li a {
 header {
     background: url('../img/hero-image.png');
     background-size: cover;
-    height: 800px;
 }
 
 header h1 {
 	color: #c78056;
 	font-family: 'Alice', serif;
-	font-size: 50px;
-	margin: 0;
-	padding: 300px 0 0 0;
+	font-size: 3.125em;
+	margin: 70px 0 0 0;
 	text-align: center;
 }
 
 header span {
 	color: #c78056;
 	font-family: 'Sacramento', cursive;
-	font-size: 80px;
+	font-size: 2em;
 }
 
 header h2 {
 	color: #095256;
 	font-family: 'Alice', serif;
-	font-size: 30px;
-	padding: 0px 320px;
+	font-size: 2em;
+	margin-bottom: 70px;
 	text-align: center;
+	width: 50%;
 }
 
 
 /***** WORK STYLES *****/
 
-#work {
-	text-align: center;
+#work .full-width {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#work .half-width {
-	height: 350px;
+.work-example {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 90%;
+    flex-flow: column;
 }
 
 #work h2 {
 	font-family: 'Alice', serif;
-	font-size: 50px;
+	font-size: 4em;
 	color: #c78056;
 }
 
 
 #work img {
 	border: 1px solid #ddd;
-	margin-left: 100px;
 	padding: 5px;
-	width: 400px;
+	width: 70%;
 }
 
 #work p {
 	color: #757575;
 	font-weight: 400;
-	font-size: 20px;
-	margin-right: 100px;
+	font-size: 2em;
 	text-align: left;
+	width: 60%;
 }
 
 
@@ -121,29 +147,24 @@ header h2 {
 	background: #f9ceb7;
 }
 
-#about .full-width {
-	clear: both;
-}
 
 #about h2 {
 	color: #c78056;
 	font-family: 'Alice', serif;
-	font-size: 50px;
+	font-size: 4em;
 	padding: 50px 0 0 0;
 	text-align: center;
 }
 
 #about img {
-	border: 12px solid #ffffff;
-	margin: 0 100px;
 	width: 450px;
 }
 
 #about p {
 	color: #757575;
 	font-weight: 400;
-	font-size: 20px;
-	margin: 0 50px;
+	font-size: 2em;
+	margin: 50px;
 	text-align: left;
 }
 
@@ -154,18 +175,89 @@ header h2 {
 #contact {
 	background: url('../img/contact-image.jpg');
 	background-size: cover;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
-#contact h3 {
+.social {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	flex-flow: row wrap;
+}
+
+.social h3 {
 	color: #c78056;
 	font-family: 'Alice', serif;
-	font-size: 50px;
+	font-size: 2.25em;
 	margin: 0;
-	padding: 50px 0 0 0;
-	text-align: left;
+	padding: 50px 0;
+	text-align: center;
+	width: 100%;
 }
 
-#contact img {
-	margin: 50px 0 0 100px;
+.social img {
 	width: 70px;
+	margin-bottom: 100px;
 }
+
+
+/*--------------------Desktop Styles----------------------*/
+
+@media all and (min-width:1200px) {
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-flow: row wrap;
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
+}
+
+nav ul li {
+	padding-left: 50px;
+}
+
+nav ul li a {
+	color: #c78056;
+	font-family: 'Alice', serif;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header h1 {
+	margin-top: 100px;
+	font-size: 5em;
+}
+
+.work-example {
+	width: 90%;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+#work .work-description {
+	width: 40%;
+}
+
+#work a {
+	width: 60%;
+}
+
+#work h2 {
+	font-size: 2em;
+}
+
+#work p {
+	font-size: 1.25em;
+}
+
+}
+
