@@ -116,8 +116,9 @@ header h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    width: 90%;
+    width: 70%;
     flex-flow: column;
+    margin: 30px 0;
 }
 
 #work h2 {
@@ -126,15 +127,10 @@ header h2 {
 	color: #c78056;
 }
 
-#work a {
-	display: flex;
-	justify-content: center;
-}
-
 #work img {
 	border: 1px solid #ddd;
 	padding: 5px;
-	width: 70%;
+	width: 100%;
 }
 
 .work-description {
@@ -150,7 +146,7 @@ header h2 {
 	font-size: 2em;
 	margin: 0;
 	text-align: left;
-	width: 70%;
+	width: 100%;
 }
 
 #work p {
@@ -159,7 +155,7 @@ header h2 {
 	font-size: 2em;
 	margin: 0;
 	text-align: left;
-	width: 70%;
+	width: 100%;
 }
 
 
@@ -258,7 +254,7 @@ header h1 {
 }
 
 .work-example {
-	width: 60%;
+	width: 90%;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	margin-bottom: 50px;
@@ -270,12 +266,18 @@ header h1 {
 	align-items: flex-start;
 }
 
+#work img {
+	width: 100%;
+}
+
 #work a {
-	width: 60%;
+	width: 40%;
 }
 
 #work h2 {
 	font-size: 2em;
+	text-align: center;
+	width: 40%;
 }
 
 #work p {
