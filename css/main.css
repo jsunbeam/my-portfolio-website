@@ -78,13 +78,14 @@ nav ul li a {
 header {
     background: url('../img/hero-image.png');
     background-size: cover;
+    background-position: top;
 }
 
 header h1 {
 	color: #c78056;
 	font-family: 'Alice', serif;
 	font-size: 3.125rem;
-	margin: 150px 0 0 0;
+	padding-top: 100px;
 	text-align: center;
 }
 
@@ -98,7 +99,7 @@ header h2 {
 	color: #095256;
 	font-family: 'Alice', serif;
 	font-size: 2em;
-	margin-bottom: 70px;
+	padding-bottom: 70px;
 	text-align: center;
 	width: 50%;
 }
@@ -232,7 +233,12 @@ header h2 {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 50%;
 }
+
+/*.social-icons a {
+	width: 100px;
+}*/
 
 
 /*--------------------Desktop Styles----------------------*/
